@@ -1,0 +1,31 @@
+---
+title: "unit3question"
+author: "divi"
+date: "6 August 2024"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(ISLR)
+data("Weekly")
+dim(Weekly)
+
+```
+```{r}
+training_data = Weekly$Year < 2009
+
+```
+
+```{r}
+testing_data = Weekly$Year >= 2009
+
+```
+
+```{r}
+dim(testing_data)
+```
+
